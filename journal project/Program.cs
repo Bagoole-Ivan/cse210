@@ -7,10 +7,10 @@ class Program
         Journal journal = new Journal();
         while (true)
         {
-            Console.WriteLine("1. Tell me something");
-            Console.WriteLine("2. Show me what you have");
-            Console.WriteLine("3. Open from a file");
-            Console.WriteLine("4. Save to a file");
+            Console.WriteLine("1. Write a new line");
+            Console.WriteLine("2. Display the Journal");
+            Console.WriteLine("3. Save the journal to a file");
+            Console.WriteLine("4. Load the journal from a file");
             Console.WriteLine("5. Exit");
             int choice = int.Parse(Console.ReadLine());
             if (choice == 1)
