@@ -7,10 +7,10 @@ class Program
         Journal journal = new Journal();
         while (true)
         {
-            Console.WriteLine("1. Write a new entry");
-            Console.WriteLine("2. Display the journal");
-            Console.WriteLine("3. Load the journal from a file");
-            Console.WriteLine("4. Save the journal to a file");
+            Console.WriteLine("1. Tell me something");
+            Console.WriteLine("2. Show me what you have");
+            Console.WriteLine("3. Open from a file");
+            Console.WriteLine("4. Save to a file");
             Console.WriteLine("5. Exit");
             int choice = int.Parse(Console.ReadLine());
             if (choice == 1)
@@ -48,11 +48,11 @@ class Program
     {
         List<string> prompts = new List<string>()
         {
-            "Who was the most interesting person I interacted with today?",
-            "What was the best part of my day?",
-            "How did I see the hand of the Lord in my life today?",
-            "What was the strongest emotion I felt today?",
-            "If I had one thing I could do over today, what would it be?"
+            "What have I achieved today?",
+            "What should I have done better today?",
+            "What was my filling about my connection with God today?",
+            "Did I accomplish what I wanted to accomplish?",
+            "This is my testimony today."
         };
         Random random = new Random();
         int index = random.Next(prompts.Count);
